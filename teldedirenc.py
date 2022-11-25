@@ -8,6 +8,7 @@ beyaz = 255 ,255, 255
 gri = 100,100,100
 
 ekran = pg.display.set_mode( (en,boy)  )
+x , y = en//2,boy//2
 
 while True:
     for event in pg.event.get():
