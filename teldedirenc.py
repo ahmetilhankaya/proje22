@@ -5,6 +5,7 @@ pg.init()
 en , boy = 800 , 600
 siyah =  0 , 0 , 0 # RGB 0- 255
 beyaz = 255 ,255, 255
+gri = 100,100,100
 
 ekran = pg.display.set_mode( (en,boy)  )
 
