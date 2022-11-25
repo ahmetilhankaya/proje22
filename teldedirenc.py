@@ -18,5 +18,29 @@ while True:
         if event.type == pg.QUIT :
             sys.exit();
     ekran.fill(kahverengi)
-    pg.draw.circle(ekran,yesil,( en//2 , boy //2  ),20)
+    pg.draw.circle(ekran,yesil,( x , y ),yari_cap)
+    
+    x += x_speed
+    y += y_speed
+
+    if x >= boy - yari_cap :
+        x_speed *= -1
+    if x <= 0+ yari_cap :
+        x_speed *= -1
+
+    if y >= boy - yari_cap :
+        y_speed *= -1
+    if y <= + yari_cap :
+        y_speed *=  -1
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     pg.display.flip()
