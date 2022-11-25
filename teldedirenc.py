@@ -8,6 +8,8 @@ beyaz = 255 ,255, 255
 gri = 100,100,100
 kahverengi = 101,67,33
 yesil = 102,255,0
+yeni_renk = 150,150,150
+
 ekran = pg.display.set_mode( (en,boy)  )
 x , y = en//2,boy//2
 x_speed = y_speed = 1
@@ -18,7 +20,7 @@ while True:
         if event.type == pg.QUIT :
             sys.exit();
     ekran.fill(kahverengi)
-    pg.draw.circle(ekran,yesil,( x , y ),yari_cap)
+    pg.draw.circle(ekran,yeni_renk,( x , y ),yari_cap)
     
     x += x_speed
     y += y_speed
