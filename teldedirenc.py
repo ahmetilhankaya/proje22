@@ -43,3 +43,6 @@ rho_scroll_box = pygame.rect.Rect(rho_scroll_box_x , rho_scroll_box_y , rho_scro
 rho_scroll_box = pygame.rect.Rect(rho_scroll_bar_x , rho_scroll_bar_y , rho_scroll_bar_width , rho_scroll_bar_height)
 
 
+rho_scroll_box_dragging = False
+
+
