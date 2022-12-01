@@ -1,28 +1,3 @@
 import pygame 
 SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 600
-WHİTE = (255, 255, 255)
-RED = (255, 0 , 0)
-BLACK = (0, 0 , 0)
-FPS = 15
 
-pygame.init()
-
-#pencere büyüklüğü, bilgisayarda oluşturulan pencerelerde 
-#koordinatlar sol üstten başlar, sağ alta doğru büyür.
-#sol üstteki koordinat noktası (0,0) dır 
-
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-
-#pencerenin adı
-pygame.display.set_caption("PyGame Direnc Hesaplama")
-
-#genel olarak kullanılacak font değişkeni :
-#pygame.font.get_default_font() fonksiyonunun kullanılma sebebi, pygame kütüphanesiyle otomatik gelen 
-#sadece bir font olması, diğer fontları kullanmak başka bilgisayarlarda uygulamanın hata almasına sebep olabilir.
-
-font = pygame.font.Font(pygame.font.get_default_font(), 18)
-
-#sıfırlama yazısı 
-
-reset_text = font.render("Sıfırla", True , (0,0,0))
