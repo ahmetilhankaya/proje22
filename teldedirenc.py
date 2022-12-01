@@ -79,3 +79,15 @@ rho_value_font = font.render(f"%.2f" %resistivity(), True,pygame.Color(0,0,0,255
 rho_value_rect = rho_value_font.get_rect()
 rho_value_rect.top = rho_scroll_bar_y + rho_scroll_bar_height + 10
 rho_value_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
+
+#
+# uzunluk değeri için gerekli scrollbar ve scrollbox'un koordinatları, ve büyüklükleri
+#   öz direnç için kullanılan bar ve box ile aynı özelliklere sahip
+# 
+
+len_scroll_bar_x,len_scroll_bar_y = 250, 100
+len_scroll_bar_width, len_scroll_bar_height  = 2, 95
+len_scroll_box_width, len_scroll_box_height = 20, 10
+len_scroll_box_x, len_scroll_box_y = len_scroll_bar_x - 9, 101 + (len_scroll_bar_height - len_scroll_box_height) / 2
+len_scroll_box = pygame.rect.Rect(len_scroll_box_x, len_scroll_box_y, len_scroll_box_width, len_scroll_box_height)
+len_scroll_bar = pygame.rect.Rect(len_scroll_bar_x, len_scroll_bar_y, len_scroll_bar_width, len_scroll_bar_height)
