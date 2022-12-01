@@ -1,4 +1,4 @@
-import pygame 
+import pygame
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 600
 
@@ -47,7 +47,7 @@ rho_scroll_box_dragging = False
 
 
 # öz direnç çubuğunun biraz üstünde öz direnç yazısı bulunuyor
-rho_name_font = font.render('Resistivity(Ωcm', True, pygame.Color(0,0,0,255))
+rho_name_font = font.render('Resistivity(Ωcm'), True, pygame.Color(0,0,0,255))
 rho_name_rect = rho_name_font .get_rect()
 rho_name_rect.bottom = rho_scroll_bar_y - 10
 rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
@@ -57,8 +57,8 @@ rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
 #       bu değeri 255 yaparsak yazıların arkaplanı tamamen transparan olur,
 #       bu sayede yazılar çakışsa da birbirlerinin önünü kapatmazlar
 
-rho_font = font.render('ρ' , True , pygame.Color(0,0,0,255))
-rho_rect = rho_name_font.get_rect()
+rho_font = font.render("p" , True , pygame.Color(0,0,0,255))
+rho_font = rho_name_font.get_rect()
 
 # öz direnç çubuğunun biraz yukarısında olması için y eksenindeki değerini azalttık
 rho_rect.bottom = rho_scroll_bar_y - 45
@@ -71,19 +71,9 @@ rho_rect.centerx = rho_scroll_bar.centerx
 # örneğin round(0.12345, 2) fonksiyonu 0.12 döndürür, kalan basamakları keser.
 
 def resistivity():
-    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1)  * 0.1 , 2)
-
-# kırmızı kutucuk(rho_scroll_box) hareket ettikçe, öz direnç değeri yeniden hesaplanacak ve metin güncellenecek
+    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1))
 
 rho_value_font = font.render(f"%.2f" %resistivity(), True,pygame.Color(0,0,0,255)  )
-rho_value_rect = rho_value_font.get_rect()
-rho_value_rect.top = rho_scroll_bar_y + rho_scroll_bar_height + 10
-rho_value_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
-
-#
-# uzunluk değeri için gerekli scrollbar ve scrollbox'un koordinatları, ve büyüklükleri
-#   öz direnç için kullanılan bar ve box ile aynı özelliklere sahip
-# 
 
 len_scroll_bar_x,len_scroll_bar_y = 250, 100
 len_scroll_bar_width, len_scroll_bar_height  = 2, 95
@@ -94,5 +84,3 @@ len_scroll_bar = pygame.rect.Rect(len_scroll_bar_x, len_scroll_bar_y, len_scroll
 
 # programın ilk açıldığı anda uzunluk değiştirilmediği için False olarak başlatıyoruz
 len_scroll_box_dragging = False
-
-#uzunluk simgesinin fontu ve koordinatları
