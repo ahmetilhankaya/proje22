@@ -58,7 +58,7 @@ rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
 #       bu sayede yazılar çakışsa da birbirlerinin önünü kapatmazlar
 
 rho_font = font.render('ρ' , True , pygame.Color(0,0,0,255))
-rho_font = rho_name_font.get_rect()
+rho_rect = rho_name_font.get_rect()
 
 # öz direnç çubuğunun biraz yukarısında olması için y eksenindeki değerini azalttık
 rho_rect.bottom = rho_scroll_bar_y - 45
@@ -71,6 +71,6 @@ rho_rect.centerx = rho_scroll_bar.centerx
 # örneğin round(0.12345, 2) fonksiyonu 0.12 döndürür, kalan basamakları keser.
 
 def resistivity():
-    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1))
+    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1)  * 0.5 , 2)
 
 rho_value_font = font.render(f"%.2f" %resistivity(), True,pygame.Color(0,0,0,255)  )
