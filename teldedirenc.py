@@ -71,7 +71,9 @@ rho_rect.centerx = rho_scroll_bar.centerx
 # örneğin round(0.12345, 2) fonksiyonu 0.12 döndürür, kalan basamakları keser.
 
 def resistivity():
-    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1)  * 0.5 , 2)
+    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1)  * 0.1 , 2)
+
+# kırmızı kutucuk(rho_scroll_box) hareket ettikçe, öz direnç değeri yeniden hesaplanacak ve metin güncellenecek
 
 rho_value_font = font.render(f"%.2f" %resistivity(), True,pygame.Color(0,0,0,255)  )
 rho_value_rect = rho_value_font.get_rect()
