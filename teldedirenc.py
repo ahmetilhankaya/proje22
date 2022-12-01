@@ -14,6 +14,9 @@ pygame.init()
 #koordinatlar sol üstten başlar, sağ alta doğru büyür.
 #sol üstteki koordinat noktası (0,0) dır 
 
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+
+
 
 
 
