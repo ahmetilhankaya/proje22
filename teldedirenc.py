@@ -37,3 +37,4 @@ reset_text = font.render("Sıfırla", True , (0,0,0))
 
 rho_scroll_bar_x , rho_scroll_bar_y = 100 , 100
 rho_scroll_bar_width , rho_scroll_bar_height = 2 , 99
+rho_scroll_bar_width , rho_scroll_box_height = 20 , 10 
