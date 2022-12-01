@@ -1,6 +1,6 @@
  #proje22
  
-                  Telde Direnç Analizi 
+                                Telde Direnç Analizi 
 
 Konu : Direnç değişkenlerinin dirence olan etkisinin şekil üzerinde gösterilmesi
 
