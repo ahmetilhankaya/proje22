@@ -1,48 +1,28 @@
-import pygame as pg
-import sys
-pg.init()
+import pygame 
+SCREEN_WIDTH = 1000
+SCREEN_HEIGHT = 600
+WHİTE = (255, 255, 255)
+RED = (255, 0 , 0)
+BLACK = (0, 0 , 0)
+FPS = 15
 
-en , boy = 800 , 600
-siyah =  0 , 0 , 0 # RGB 0- 255
-beyaz = 255 ,255, 255
-gri = 100,100,100
-kahverengi = 101,67,33
-yesil = 102,255,0
-yeni_renk = 150,150,150
+pygame.init()
 
-ekran = pg.display.set_mode( (en,boy)  )
-x , y = en//2,boy//2
-x_speed = y_speed = 1
-yari_cap = 40
+#pencere büyüklüğü, bilgisayarda oluşturulan pencerelerde 
+#koordinatlar sol üstten başlar, sağ alta doğru büyür.
+#sol üstteki koordinat noktası (0,0) dır 
 
-while True:
-    for event in pg.event.get():
-        if event.type == pg.QUIT :
-            sys.exit();
-    ekran.fill(kahverengi)
-    pg.draw.circle(ekran,yeni_renk,( x , y ),yari_cap)
-    
-    x += x_speed
-    y += y_speed
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
-    if x >= boy - yari_cap :
-        x_speed *= -1
-    if x <= 0+ yari_cap :
-        x_speed *= -1
+#pencerenin adı
+pygame.display.set_caption("PyGame Direnc Hesaplama")
 
-    if y >= boy - yari_cap :
-        y_speed *= -1
-    if y <= + yari_cap :
-        y_speed *=  -1
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    pg.display.flip()
+#genel olarak kullanılacak font değişkeni :
+#pygame.font.get_default_font() fonksiyonunun kullanılma sebebi, pygame kütüphanesiyle otomatik gelen sadece bir font olması,
+#diğer fontları kullanmak başka bilgisayarlarda uygulamanın hata almasına sebep olabilir.
+
+font = pygame.font.Font(pygame.font.get_default_font(), 18)
+
+#sıfırlama yazısı 
+
+reset_text = font.render("Sıfırla", True , (0,0,0))
