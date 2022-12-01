@@ -52,6 +52,10 @@ rho_name_rect = rho_name_font .get_rect()
 rho_name_rect.bottom = rho_scroll_bar_y - 10
 rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
 
+# öz direnç simgesi ve yazısının fontları, pozisyonları ve renkleri :
+#        pygame.Color sınıfına mensup bir değişken oluşturulurken, 4. sıradaki argüman yazının arkaplan renginin alfa değerini belirtir,
+#       bu değeri 255 yaparsak yazıların arkaplanı tamamen transparan olur,
+#       bu sayede yazılar çakışsa da birbirlerinin önünü kapatmazlar
 
 rho_font = font.render('ρ' , True , pygame.Color(0,0,0,255))
 rho_font = rho_name_font.get_rect()
