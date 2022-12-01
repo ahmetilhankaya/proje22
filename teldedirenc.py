@@ -79,3 +79,8 @@ len_scroll_bar = pygame.rect.Rect(len_scroll_bar_x, len_scroll_bar_y, len_scroll
 
 # programın ilk açıldığı anda uzunluk değiştirilmediği için False olarak başlatıyoruz
 len_scroll_box_dragging = False
+
+#uzunluk simgesinin fontu ve koordinatları
+len_font = font.render('L', True, pygame.Color(0,0,0,255))
+len_rect = len_font.get_rect()
+
