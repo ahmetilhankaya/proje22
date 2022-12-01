@@ -58,7 +58,7 @@ rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
 #       bu sayede yazılar çakışsa da birbirlerinin önünü kapatmazlar
 
 rho_font = font.render('ρ' , True , pygame.Color(0,0,0,255))
-rho_font = rho_name_font.get_rect()
+rho_rect = rho_name_font.get_rect()
 
 # öz direnç çubuğunun biraz yukarısında olması için y eksenindeki değerini azalttık
 rho_rect.bottom = rho_scroll_bar_y - 45
@@ -71,6 +71,26 @@ rho_rect.centerx = rho_scroll_bar.centerx
 # örneğin round(0.12345, 2) fonksiyonu 0.12 döndürür, kalan basamakları keser.
 
 def resistivity():
-    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1))
+    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1)  * 0.1 , 2)
+
+# kırmızı kutucuk(rho_scroll_box) hareket ettikçe, öz direnç değeri yeniden hesaplanacak ve metin güncellenecek
 
 rho_value_font = font.render(f"%.2f" %resistivity(), True,pygame.Color(0,0,0,255)  )
+rho_value_rect = rho_value_font.get_rect()
+rho_value_rect.top = rho_scroll_bar_y + rho_scroll_bar_height + 10
+rho_value_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
+
+#
+# uzunluk değeri için gerekli scrollbar ve scrollbox'un koordinatları, ve büyüklükleri
+#   öz direnç için kullanılan bar ve box ile aynı özelliklere sahip
+# 
+
+len_scroll_bar_x,len_scroll_bar_y = 250, 100
+len_scroll_bar_width, len_scroll_bar_height  = 2, 95
+len_scroll_box_width, len_scroll_box_height = 20, 10
+len_scroll_box_x, len_scroll_box_y = len_scroll_bar_x - 9, 101 + (len_scroll_bar_height - len_scroll_box_height) / 2
+len_scroll_box = pygame.rect.Rect(len_scroll_box_x, len_scroll_box_y, len_scroll_box_width, len_scroll_box_height)
+len_scroll_bar = pygame.rect.Rect(len_scroll_bar_x, len_scroll_bar_y, len_scroll_bar_width, len_scroll_bar_height)
+
+# programın ilk açıldığı anda uzunluk değiştirilmediği için False olarak başlatıyoruz
+len_scroll_box_dragging = False
