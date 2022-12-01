@@ -25,8 +25,6 @@ pygame.display.set_caption("PyGame Direnc Hesaplama")
 
 font = pygame.font.Font(pygame.font.get_default_font(), 18)
 
+#sıfırlama yazısı
 
-
-
-
-
+reset_text = font.render("Sıfırla", True , (0,0,0))
