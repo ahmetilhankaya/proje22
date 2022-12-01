@@ -28,3 +28,9 @@ font = pygame.font.Font(pygame.font.get_default_font(), 18)
 #sıfırlama yazısı
 
 reset_text = font.render("Sıfırla", True , (0,0,0))
+
+
+#ÖZDİRENÇ
+#özdirenci hesaplamak için gerekli olan kırmızı kaydırma kutucuğu 
+#ve kırmızı kutunun üzerinde duracağı siyah çizgi 
+#koordinatların ve boyutların tanımlanması
