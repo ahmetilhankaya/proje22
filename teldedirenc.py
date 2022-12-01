@@ -9,3 +9,12 @@ BLACK = (0, 0 , 0)
 FPS = 15
 
 pygame.init()
+
+#pencere büyüklüğü, bilgisayarda oluşturulan pencerelerde 
+#koordinatlar sol üstten başlar, sağ alta doğru büyür.
+#sol üstteki koordinat noktası (0,0) dır 
+
+
+
+
+
