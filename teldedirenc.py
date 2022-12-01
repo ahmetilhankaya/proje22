@@ -36,3 +36,4 @@ reset_text = font.render("Sıfırla", True , (0,0,0))
 #koordinatların ve boyutların tanımlanması
 
 rho_scroll_bar_x , rho_scroll_bar_y = 100 , 100
+rho_scroll_bar_width , rho_scroll_bar_height = 2 , 99
