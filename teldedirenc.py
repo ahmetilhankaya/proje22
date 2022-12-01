@@ -72,3 +72,5 @@ rho_rect.centerx = rho_scroll_bar.centerx
 
 def resistivity():
     return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1))
+
+rho_value_font = font.render(f"%.2f" %resistivity(), True,pygame.Color(0,0,0,255)  )
