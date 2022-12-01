@@ -46,3 +46,5 @@ rho_scroll_bar = pygame.rect.Rect(rho_scroll_bar_x , rho_scroll_bar_y , rho_scro
 rho_scroll_box_dragging = False
 
 
+# öz direnç çubuğunun biraz üstünde öz direnç yazısı bulunuyor
+rho_name_font = font.render('Resistivity(Ωcm', True, pygame.Color(0,0,0,255))
