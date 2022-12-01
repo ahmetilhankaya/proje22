@@ -83,4 +83,4 @@ len_scroll_box_dragging = False
 #uzunluk simgesinin fontu ve koordinatları
 len_font = font.render('L', True, pygame.Color(0,0,0,255))
 len_rect = len_font.get_rect()
-
+len_rect.bottom = len_scroll_bar_y - 45
