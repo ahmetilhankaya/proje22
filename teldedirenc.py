@@ -53,3 +53,6 @@ rho_name_rect.bottom = rho_scroll_bar_y - 10
 rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
 
 
+rho_font = font.render('ρ' , True , pygame.Color(0,0,0,255))
+
+
