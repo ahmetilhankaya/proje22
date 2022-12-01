@@ -37,7 +37,7 @@ reset_text = font.render("Sıfırla", True , (0,0,0))
 
 rho_scroll_bar_x , rho_scroll_bar_y = 100 , 100
 rho_scroll_bar_width , rho_scroll_bar_height = 2 , 99
-rho_scroll_bar_width , rho_scroll_box_height = 20 , 10 
+rho_scroll_box_width , rho_scroll_box_height = 20 , 10 
 rho_scroll_box_x , rho_scroll_box_y = rho_scroll_bar_x - 9 , 101 + (rho_scroll_bar_height - rho_scroll_box_height) / 2
 rho_scroll_box = pygame.rect.Rect(rho_scroll_box_x , rho_scroll_box_y , rho_scroll_box_width , rho_scroll_box_height)
 rho_scroll_bar = pygame.rect.Rect(rho_scroll_bar_x , rho_scroll_bar_y , rho_scroll_bar_width , rho_scroll_bar_height)
