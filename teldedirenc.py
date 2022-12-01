@@ -8,3 +8,4 @@ BLACK = (0, 0 , 0)
 
 FPS = 15
 
+pygame.init()
