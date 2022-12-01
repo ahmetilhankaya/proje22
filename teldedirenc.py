@@ -42,7 +42,7 @@ rho_scroll_box_x , rho_scroll_box_y = rho_scroll_bar_x - 9 , 101 + (rho_scroll_b
 rho_scroll_box = pygame.rect.Rect(rho_scroll_box_x , rho_scroll_box_y , rho_scroll_box_width , rho_scroll_box_height)
 rho_scroll_box = pygame.rect.Rect(rho_scroll_bar_x , rho_scroll_bar_y , rho_scroll_bar_width , rho_scroll_bar_height)
 
-
+#ilk olarak özdirenç kutucuğu hareket etmiyormuş gibi kabul ediliyor
 rho_scroll_box_dragging = False
 
 
