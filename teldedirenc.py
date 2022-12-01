@@ -62,6 +62,7 @@ rho_font = rho_name_font.get_rect()
 
 # öz direnç çubuğunun biraz yukarısında olması için y eksenindeki değerini azalttık
 rho_rect.bottom = rho_scroll_bar_y - 45
+# yazının çubuk ile hizada durması için çubğun x ekseninde orta noktasını hesaplayıp yazının x eksenindeki merkezine atadık
 rho_rect.centerx = rho_scroll_bar.centerx
 
 
