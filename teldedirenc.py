@@ -65,5 +65,10 @@ rho_rect.bottom = rho_scroll_bar_y - 45
 # yazının çubuk ile hizada durması için çubğun x ekseninde orta noktasını hesaplayıp yazının x eksenindeki merkezine atadık
 rho_rect.centerx = rho_scroll_bar.centerx
 
+#  öz direnç hesaplama fonksiyonu, 
+# bu fonksiyon kırmızı kutunun, arkaplanındaki siyah çubuğun tepesine olan uzaklığını hesaplayarak 0.01 ile çarpıyor
+# ve round() fonksiyonunu kullanarak bu float türündeki sayının 2 decimal basamağını hesaplıyor 
+# örneğin round(0.12345, 2) fonksiyonu 0.12 döndürür, kalan basamakları keser.
+
 def resistivity():
-    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rhoscrollbox.height / 2) + 1))
+    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rho_scroll_box.height / 2) + 1))
