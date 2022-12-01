@@ -65,4 +65,5 @@ rho_rect.bottom = rho_scroll_bar_y - 45
 # yazının çubuk ile hizada durması için çubğun x ekseninde orta noktasını hesaplayıp yazının x eksenindeki merkezine atadık
 rho_rect.centerx = rho_scroll_bar.centerx
 
-
+def resistivity():
+    return round((rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box.y - (rhoscrollbox.height / 2) + 1))
