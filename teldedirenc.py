@@ -34,3 +34,5 @@ reset_text = font.render("Sıfırla", True , (0,0,0))
 #özdirenci hesaplamak için gerekli olan kırmızı kaydırma kutucuğu 
 #ve kırmızı kutunun üzerinde duracağı siyah çizgi 
 #koordinatların ve boyutların tanımlanması
+
+rho_scroll_bar_x , rho_scroll_bar_y = 100 , 100
