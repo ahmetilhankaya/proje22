@@ -18,8 +18,8 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("PyGame Direnc Hesaplama")
 
 #genel olarak kullanılacak font değişkeni :
-#pygame.font.get_default_font() fonksiyonunun kullanılma sebebi, pygame kütüphanesiyle otomatik gelen sadece bir font olması,
-#diğer fontları kullanmak başka bilgisayarlarda uygulamanın hata almasına sebep olabilir.
+#pygame.font.get_default_font() fonksiyonunun kullanılma sebebi, pygame kütüphanesiyle otomatik gelen 
+#sadece bir font olması, diğer fontları kullanmak başka bilgisayarlarda uygulamanın hata almasına sebep olabilir.
 
 font = pygame.font.Font(pygame.font.get_default_font(), 18)
 
