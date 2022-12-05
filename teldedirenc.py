@@ -21,8 +21,11 @@ pygame.display.set_caption("PyGame Direnc Hesaplama")
 #genel olarak kullanılacak font değişkeni:
 #   pygame.font.get_default_font() fonksiyonunun kullanılma sebebi, pygame kütüphanesiyle otomtik gelen sadece 1 font olması,
 #   diğer fontları kullanmak başka bilgisayarlarda uygulamanın hata almasına sebep olabilir.
+
 font = pygame.font.Font(pygame.font.get_default_font(), 18)
+
 #sıfırlama yazsısı
+
 reset_text = font.render("Sıfırla", True, (0,0,0))
 
 
