@@ -109,3 +109,4 @@ len_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
 len_name_font = font.render('Length(cm)', True, pygame.Color(0,0,0,255))
 len_name_rect = len_name_font.get_rect()
 len_name_rect.bottom = len_scroll_bar_y - 10
+len_name_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
