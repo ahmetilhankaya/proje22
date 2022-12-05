@@ -55,11 +55,16 @@ rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
 #       pygame.Color sınıfına mensup bir değişken oluşturulurken, 4. sıradaki argüman yazının arkaplan renginin alfa değerini belirtir,
 #       bu değeri 255 yaparsak yazıların arkaplanı tamamen transparan olur,
 #       bu sayede yazılar çakışsa da birbirlerinin önünü kapatmazlar
+
 rho_font = font.render('ρ', True, pygame.Color(0,0,0,255))
 rho_rect = rho_font.get_rect()
+
 # öz direnç çubuğunun biraz yukarısında olması için y eksenindeki değerini azalttık
+
 rho_rect.bottom = rho_scroll_bar_y - 45
+
 # yazının çubuk ile hizada durması için çubğun x ekseninde orta noktasını hesaplayıp yazının x eksenindeki merkezine atadık
+
 rho_rect.centerx = rho_scroll_bar.centerx
 
 # öz direnç hesaplama fonksiyonu, 
