@@ -33,16 +33,19 @@ reset_text = font.render("Sıfırla", True, (0,0,0))
 # öz direnci hesaplamak için gerekli olan kırmızı kaydırma kutucuğu(rho_scroll_box)
 # ve kırmızı kutunun üzerinde duracağı siyah çizgi(rho_scroll_bar)'nin
 # koordinatlarının ve boyutlarının tanımlanması
+
 rho_scroll_bar_x,rho_scroll_bar_y = 100, 100
 rho_scroll_bar_width, rho_scroll_bar_height  = 2, 99
 rho_scroll_box_width, rho_scroll_box_height = 20, 10
 rho_scroll_box_x, rho_scroll_box_y = rho_scroll_bar_x - 9, 101 + (rho_scroll_bar_height - rho_scroll_box_height) / 2
 rho_scroll_box = pygame.rect.Rect(rho_scroll_box_x, rho_scroll_box_y, rho_scroll_box_width, rho_scroll_box_height)
 rho_scroll_bar = pygame.rect.Rect(rho_scroll_bar_x, rho_scroll_bar_y, rho_scroll_bar_width, rho_scroll_bar_height)
+
 # ilk olarak öz direnç kutucuğu hareket etmiyormuş gibi kabul ediliyor
 rho_scroll_box_dragging = False
 
 # öz direnç çubuğunun biraz üstünde öz direnç yazısı bulunuyor.
+
 rho_name_font = font.render('Resistivity(Ωcm)', True, pygame.Color(0,0,0,255))
 rho_name_rect = rho_name_font .get_rect()
 rho_name_rect.bottom = rho_scroll_bar_y - 10
