@@ -1,6 +1,5 @@
 import pygame
-# sıfırlama butonu yorum satırları
-# sabitler
+
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 600
 WHITE = (255, 255, 255)
