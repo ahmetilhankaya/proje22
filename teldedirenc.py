@@ -106,3 +106,4 @@ len_rect.bottom = len_scroll_bar_y - 45
 len_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
 
 #uzunluk isminin koordinatları
+len_name_font = font.render('Length(cm)', True, pygame.Color(0,0,0,255))
