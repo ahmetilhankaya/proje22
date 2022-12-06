@@ -111,6 +111,10 @@ len_name_rect = len_name_font.get_rect()
 len_name_rect.bottom = len_scroll_bar_y - 10
 len_name_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
 
+# uzunluk hesaplama fonksiyonu
+# bu fonksiyon da resistivity() gibi kırmızı kutunun siyah çubuğun tepesine olan uzaklığını kullanarak hesaplamasını yapar
+# en az 1 uzunluğu elde etmek için return değerine + 1 koyarız, round() il virgül sonrası sadece 2 basamağı saklarız
+
 def length():
         return round((len_scroll_bar_height + len_scroll_bar_y - len_scroll_box.y - (len_scroll_box.height / 2)) / 5 + 1,2)
     
