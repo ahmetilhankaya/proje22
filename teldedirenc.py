@@ -118,6 +118,13 @@ len_name_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
 def length():
         return round((len_scroll_bar_height + len_scroll_bar_y - len_scroll_box.y - (len_scroll_box.height / 2)) / 5 + 1,2)
     
+# uzunluk değerinin yazıldığı metin kutusu, uzunluk çubuğunun altında yer alır, bu nedenle
+# len_value_rect.top (bu yazının tepesi) uzunluk çubuğunun biraz altında olmalıdır.
+# y ekseninde aşağı gittikçe değer artar bu nedenle 14 ekliyoruz.
+# yazıyı da çubuk ile hizalamak için x ekseninde merkezini çubuğun tam orta noktasına eşitliyoruz
+# çubuğun orta noktasını hesaplamak için de önce çubuğun x değerini(çubuğun sol üst noktası) 
+# ile çubuğun genişliğinin yarısını toplarsak, ubuğun x ekseninde orta noktasını bulmuş oluruz
+    
 len_value_font = font.render(str(length()), True, pygame.Color(0,0,0,255))
 len_value_rect = len_value_font.get_rect()
 len_value_rect.top = len_scroll_bar_y + len_scroll_bar_height + 14
