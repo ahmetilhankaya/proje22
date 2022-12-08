@@ -155,7 +155,7 @@ area_name_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width /2)
 
 
 def area():
-    max = 0.1
-    x = (area_scroll_bar.y + area_scroll_bar_height - (area_scroll_box.y + area_scroll_bar_height /2)) / area_scroll_bar_height * 14.99
-    return round(max + x,2)
+    min = 0.1
+    x = (area_scroll_bar.y + area_scroll_bar_height - (area_scroll_box.y + area_scroll_box_height /2)) / area_scroll_bar_height * 14.99
+    return round(min + x,2)
 
