@@ -146,3 +146,7 @@ area_font = font.render('A', True, pygame.Color(0,0,0,255))
 area_rect = area_font.get_rect()
 area_rect.bottom = area_scroll_bar_y - 45
 area_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width / 2)
+
+
+area_name_font = font.render('Area(cm^2)', True, pygame.Color(0,0,0,255))
+area_name_rect = area_name_font .get_rect()
