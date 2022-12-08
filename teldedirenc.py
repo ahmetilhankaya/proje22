@@ -141,3 +141,4 @@ area_scroll_box_dragging = False
 
 
 area_font = font.render('A', True, pygame.Color(0,0,0,255))
+area_rect = area_font.get_rect()
