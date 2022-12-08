@@ -137,6 +137,8 @@ area_scroll_box_width, area_scroll_box_height = 20, 10
 area_scroll_box_x, area_scroll_box_y = area_scroll_bar_x - 9, 101 + (area_scroll_bar_height - area_scroll_box_height) / 1.5
 area_scroll_box = pygame.rect.Rect(area_scroll_box_x, area_scroll_box_y, area_scroll_box_width, area_scroll_box_height)
 area_scroll_bar = pygame.rect.Rect(area_scroll_bar_x, area_scroll_bar_y, area_scroll_bar_width, area_scroll_bar_height)
+
+#oyun ilk çalıştığı an area değişmediği için false atıyoruz
 area_scroll_box_dragging = False
 
 
