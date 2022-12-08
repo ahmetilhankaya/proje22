@@ -154,6 +154,10 @@ area_name_rect.bottom = area_scroll_bar_y - 10
 area_name_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width /2)
 
 
+# areayı 0.01 ile 15 arasında tutmak için kırmızı çubuğun siyah çubuğun alt noktasına olan uzunlupunun ,
+#siyah çubuğun boyuna olan oranını bulup (0-1 arası bir değer )
+#bu değeri 14.99 ile çarpıp sonuca 0.01 ekliyoruz ve istediğimiz aralığı elde etmiş oluyoruz
+
 def area():
     min = 0.1
     x = (area_scroll_bar.y + area_scroll_bar_height - (area_scroll_box.y + area_scroll_box_height /2)) / area_scroll_bar_height * 14.99
