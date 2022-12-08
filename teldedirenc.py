@@ -141,7 +141,7 @@ area_scroll_bar = pygame.rect.Rect(area_scroll_bar_x, area_scroll_bar_y, area_sc
 #oyun ilk çalıştığı an area değişmediği için false atıyoruz
 area_scroll_box_dragging = False
 
-
+#rho ve length ile aynı işlemler yine yapılıyor...
 area_font = font.render('A', True, pygame.Color(0,0,0,255))
 area_rect = area_font.get_rect()
 area_rect.bottom = area_scroll_bar_y - 45
