@@ -181,8 +181,9 @@ def resistance():
     return round(_resistance, 3)
 
 
-reistance_font = pygame.font.Font(pygame.font.get_default_font(), int(resistance()) + 10 )
-division_r = reistance_font.render('R', False, pygame.Color(12,58,160,255))
+# direnç yazısının fontu
+reistance_font = pygame.font.Font(pygame.font.get_default_font(), int(resistance()) + 10 ) # 2. değişken font büyüklüğünü temsil eder
+division_r = reistance_font.render('R', False, pygame.Color(12,58,160,255)) # metin rengi için renk değeri seçildi
 division_r_text = division_r.get_rect()
 division_r_text.centery = area_scroll_bar_y + 70
 division_r_text.centerx = area_scroll_bar_x + 130
