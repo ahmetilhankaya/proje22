@@ -187,3 +187,5 @@ division_r = reistance_font.render('R', False, pygame.Color(12,58,160,255)) # me
 division_r_text = division_r.get_rect()
 division_r_text.centery = area_scroll_bar_y + 70
 division_r_text.centerx = area_scroll_bar_x + 130
+
+equal_sign = font.render('=', True, pygame.Color(0,0,0,255))
