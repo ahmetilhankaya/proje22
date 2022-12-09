@@ -179,3 +179,6 @@ def resistance():
     _resistance = _resistivity * _lenght / _area
 
     return round(_resistance, 3)
+
+
+reistance_font = pygame.font.Font(pygame.font.get_default_font(), int(resistance()) + 10 )
