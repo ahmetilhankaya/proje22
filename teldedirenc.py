@@ -193,3 +193,7 @@ equal_sign = font.render('=', True, pygame.Color(0,0,0,255))
 equal_sign_text = equal_sign.get_rect()
 equal_sign_text.centery = area_scroll_bar_y + 70
 equal_sign_text.centerx = area_scroll_bar_x + 210
+
+
+
+resistivity_font = pygame.font.Font(pygame.font.get_default_font(), int(float(resistivity()) * 200) + 15)
