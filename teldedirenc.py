@@ -211,3 +211,5 @@ division_l_text.centery = area_scroll_bar_y
 division_l_text.centerx = area_scroll_bar_y + 460
 
 # denklemdeki pay ve payı ayıran çizginin özellikleri
+
+division_line_height = 5
