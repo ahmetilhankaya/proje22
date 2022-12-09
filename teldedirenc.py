@@ -174,3 +174,5 @@ area_value_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width /2)
 def resistance():
     _resistivity = resistivity()
     _lenght = lenght()
+    _area = area()
+    _resistance = _resistivity * _lenght / _area
