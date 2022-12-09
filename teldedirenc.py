@@ -201,3 +201,7 @@ division_rho = resistivity_font.render('ρ', True, pygame.Color(0,0,0,255))
 division_rho_text = division_rho.get_rect()
 division_rho_text.centery = area_scroll_bar_y
 division_rho_text.centerx = area_scroll_bar_x + 320
+
+
+
+length_font = pygame.font.Font(pygame.font.get_default_font(), int(length()) * 10 + 15)
