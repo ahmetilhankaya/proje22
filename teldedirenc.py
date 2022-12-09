@@ -214,3 +214,4 @@ division_l_text.centerx = area_scroll_bar_y + 460
 
 division_line_height = 5
 division_line_width = 300
+division_line = pygame.rect.Rect(area_scroll_bar_x + 240, area_scroll_bar_y + 70, division_line_width , division_line_height)
