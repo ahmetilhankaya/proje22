@@ -171,6 +171,7 @@ area_value_rect.top = area_scroll_bar_y + area_scroll_bar_height + 10
 area_value_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width /2)
 
 
+#direnç hesabı
 def resistance():
     _resistivity = resistivity()
     _lenght = lenght()
