@@ -182,3 +182,4 @@ def resistance():
 
 
 reistance_font = pygame.font.Font(pygame.font.get_default_font(), int(resistance()) + 10 )
+division_r = resistance_font.render('R', False, pygame.Color(12,58,160,255))
