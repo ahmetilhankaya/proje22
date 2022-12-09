@@ -209,3 +209,5 @@ division_l= length_font.render('L', True, pygame.Color(0,0,0,255))
 division_l_text = division_l.get_rect()
 division_l_text.centery = area_scroll_bar_y
 division_l_text.centerx = area_scroll_bar_y + 460
+
+# denklemdeki pay ve payı ayıran çizginin özellikleri
