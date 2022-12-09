@@ -176,3 +176,5 @@ def resistance():
     _lenght = lenght()
     _area = area()
     _resistance = _resistivity * _lenght / _area
+
+    return round(_resistance, 3)
