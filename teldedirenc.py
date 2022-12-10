@@ -221,3 +221,4 @@ division_line = pygame.rect.Rect(area_scroll_bar_x + 240, area_scroll_bar_y + 70
 division_area_font = pygame.font.Font(pygame.font.get_default_font(), int(area() * 10) + 15)
 division_area = division_area_font.render('A', True, pygame.Color(0,0,0,255))
 division_area_text = division_area.get_rect()
+division_area_text.centery = area_scroll_bar_y + 160
