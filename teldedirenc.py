@@ -216,7 +216,7 @@ division_line_height = 5
 division_line_width = 300
 division_line = pygame.rect.Rect(area_scroll_bar_x + 240, area_scroll_bar_y + 70, division_line_width , division_line_height)
 
-
+# alan sembolü
 
 division_area_font = pygame.font.Font(pygame.font.get_default_font(), int(area() * 10) + 15)
 division_area = division_area_font.render('A', True, pygame.Color(0,0,0,255))
