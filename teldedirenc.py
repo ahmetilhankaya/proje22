@@ -227,7 +227,7 @@ division_area_text.centerx = area_scroll_bar_x + 390
 # pencereyi yenilemek için clock ddeğişkenini kullanıyoruz, fps gibi düşünülebilir.
 clock = pygame.time.clock()
 
-
+# kablonun koordinatları ve büyüklüğü
 
 cable_length = int(length() * 10) + 5
 cable_start_y, cable_start_x = rho_scroll_bar_y + rho_scroll_bar_height + 200, rho_scroll_bar_x
