@@ -230,3 +230,4 @@ clock = pygame.time.clock()
 
 
 cable_length = int(length() * 10) + 5
+cable_start_y, cable_start_x = rho_scroll_bar_y + rho_scroll_bar_height + 200, rho_scroll_bar_x
