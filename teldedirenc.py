@@ -227,3 +227,6 @@ division_area_text.centerx = area_scroll_bar_x + 390
 # pencereyi yenilemek için clock ddeğişkenini kullanıyoruz, fps gibi düşünülebilir.
 clock = pygame.time.clock()
 
+
+
+cable_length = int(length() * 10) + 5
