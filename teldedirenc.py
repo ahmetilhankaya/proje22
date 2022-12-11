@@ -223,3 +223,5 @@ division_area = division_area_font.render('A', True, pygame.Color(0,0,0,255))
 division_area_text = division_area.get_rect()
 division_area_text.centery = area_scroll_bar_y + 160
 division_area_text.centerx = area_scroll_bar_x + 390
+
+clock = pygame.time.clock()
