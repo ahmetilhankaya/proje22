@@ -237,3 +237,4 @@ cable_color = (int(resistivity() * 255), 0,0)
 
 
 calculated_resistance_font = pygame.font.Font(pygame.font.get_default_font(), 20)
+calculated_resistance = calculated_resistance_font.render(f"resistance = %g" %resitance(), True, pygame.Color(255,0,0,255))
