@@ -233,3 +233,7 @@ cable_length = int(length() * 10) + 5
 cable_start_y, cable_start_x = rho_scroll_bar_y + rho_scroll_bar_height + 200, rho_scroll_bar_x
 cable_area_y, cable_area_x = int(area() * 5) + 5, 20
 cable_color = (int(resistivity() * 255), 0,0)
+
+
+
+calculated_resistance_font = pygame.font.Font(pygame.font.get_default_font(), 20)
