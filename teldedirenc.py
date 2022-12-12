@@ -234,7 +234,7 @@ cable_start_y, cable_start_x = rho_scroll_bar_y + rho_scroll_bar_height + 200, r
 cable_area_y, cable_area_x = int(area() * 5) + 5, 20
 cable_color = (int(resistivity() * 255), 0,0)
 
-
+# kablonun üstünde duracak olan direnç değerinin yazıldığı metin
 
 calculated_resistance_font = pygame.font.Font(pygame.font.get_default_font(), 20)
 calculated_resistance = calculated_resistance_font.render(f"resistance = %g" %resitance(), True, pygame.Color(255,0,0,255))
