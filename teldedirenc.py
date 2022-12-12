@@ -240,3 +240,4 @@ calculated_resistance_font = pygame.font.Font(pygame.font.get_default_font(), 20
 calculated_resistance = calculated_resistance_font.render(f"resistance = %g" %resitance(), True, pygame.Color(255,0,0,255))
 calculated_resistance_text = calculated_resistance.get_rect()
 calculated_resistance_tet.x = int(240)
+calculated_resistance_text.bottom = cable_start_y - 30
