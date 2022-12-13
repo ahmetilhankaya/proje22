@@ -208,7 +208,7 @@ length_font = pygame.font.Font(pygame.font.get_default_font(), int(length()) * 1
 division_l= length_font.render('L', True, pygame.Color(0,0,0,255))
 division_l_text = division_l.get_rect()
 division_l_text.centery = area_scroll_bar_y
-division_l_text.centerx = area_scroll_bar_y + 460
+division_l_text.centerx = area_scroll_bar_x + 460
 
 # denklemdeki pay ve payı ayıran çizginin özellikleri
 
