@@ -241,3 +241,7 @@ calculated_resistance = calculated_resistance_font.render(f"resistance = %g" %re
 calculated_resistance_text = calculated_resistance.get_rect()
 calculated_resistance_text.x = int(240)
 calculated_resistance_text.bottom = cable_start_y - 30
+
+def update_rho_value_text(_resistivity):
+    global font, rho_value_font, rho_value_rect
+    
