@@ -247,3 +247,5 @@ def update_rho_value_text(_resistivity):
     rho_value_font = font.render(f"%.2f" %_resistivity, True, BLACK)
     rho_value_rect = rho_value_font.get_rect()
     rho_value_rect.top = rho_scroll_bar_y + rho_scroll_bar_height + 10
+    rho_value_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
+    
