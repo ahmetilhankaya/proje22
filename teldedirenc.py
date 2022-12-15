@@ -255,4 +255,4 @@ def update_rho_value_text(_resistivity):
 
 def update_division_rho_size(_resistivity):
     global resistivity_font, division_rho, division_rho_text
-    
+    resistivity_font = pygame.font.Font(pygame.font.get_default_font(), int(float(_resistivity) * 200) + 15)
