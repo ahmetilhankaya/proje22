@@ -254,3 +254,5 @@ def update_rho_value_text(_resistivity):
 
 
 def update_division_rho_size(_resistivity):
+    global resistivity_font, division_rho, division_rho_text
+    
