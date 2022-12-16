@@ -262,3 +262,4 @@ def update_division_rho_size(_resistivity):
     division_rho_text.centerx = area_scroll_bar_x + 320
     
     def update_len_value_text(_length):
+        global len_value_font, len_value_rect
