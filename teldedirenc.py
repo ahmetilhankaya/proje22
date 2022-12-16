@@ -265,3 +265,4 @@ def update_division_rho_size(_resistivity):
         global len_value_font, len_value_rect
         len_value_font = font.render(str(_length), True, BLACK)
         len_value_rect = len_value_font.get_rect()
+        len_value_rect.top = len_scroll_bar_y + len_scroll_bar_height + 14
