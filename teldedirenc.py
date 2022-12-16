@@ -264,3 +264,4 @@ def update_division_rho_size(_resistivity):
     def update_len_value_text(_length):
         global len_value_font, len_value_rect
         len_value_font = font.render(str(_length), True, BLACK)
+        len_value_rect = len_value_font.get_rect()
