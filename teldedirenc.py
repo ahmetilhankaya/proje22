@@ -285,3 +285,5 @@ def update_area_value_text(_area):
     global area_value_font, area_value_rect, cable_area_y
     area_value_font = font.render((f"%.2f" %_area), True, BLACK)
     area_value_rect = area_value_font.get_rect()
+    area_value_rect.top = area_scroll_bar_y + area_scroll_bar_height + 10
+    area_value_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width / 2)
