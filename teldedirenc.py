@@ -289,3 +289,8 @@ def update_area_value_text(_area):
     area_value_rect.top = area_scroll_bar_y + area_scroll_bar_height + 10
     area_value_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width / 2)
     cable_area_y = int(_area * 5) + 5
+
+
+def update_division_area_size(_area):
+    global division_area_font, division_area, division_area_text
+    division_area_font = pygame.font.Font(pygame.font.get_default_font(), int(_area * 10) + 15 )
