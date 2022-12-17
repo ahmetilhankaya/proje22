@@ -294,3 +294,5 @@ def update_area_value_text(_area):
 def update_division_area_size(_area):
     global division_area_font, division_area, division_area_text
     division_area_font = pygame.font.Font(pygame.font.get_default_font(), int(_area * 10) + 15 )
+    division_area = division_area_font.render('A', True, pygame.color(0,0,0,255))
+    
