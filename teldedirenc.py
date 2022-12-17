@@ -270,6 +270,7 @@ def update_len_value_text(_length):
     len_value_rect.top = len_scroll_bar_y + len_scroll_bar_height + 14
     len_value_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
 
+# uzunluk sembolünün büyüklüğünü güncellemek için kullanılır
 
 def update_area_value_text(_lenght):
     global length_font, division_l, division_l_text
@@ -277,6 +278,6 @@ def update_area_value_text(_lenght):
     division_1 = length_font.render('L',True, pygame.Color(0,0,0,255))
     division_1_text = division_1.get_rect()
     division_1_text.centery = area_scroll_bar_y
-    division_1_text.centerx = area_scroll_bar_x
+    division_1_text.centerx = area_scroll_bar_x + 460
 
 
