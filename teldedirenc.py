@@ -297,3 +297,4 @@ def update_division_area_size(_area):
     division_area = division_area_font.render('A', True, pygame.color(0,0,0,255))
     division_area_text = division_area.get_rect()
     division_area_text.centery = area_scroll_bar_y + 160
+    division_area_text.centerx = area_scroll_bar_x + 390
