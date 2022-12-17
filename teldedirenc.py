@@ -283,5 +283,5 @@ def update_area_value_text(_lenght):
 
 def update_area_value_text(_area):
     global area_value_font, area_value_rect, cable_area_y
-
+    area_value_font = font.render((f"%.2f" %_area), True, BLACK)
 
