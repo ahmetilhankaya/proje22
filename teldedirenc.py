@@ -281,6 +281,7 @@ def update_area_value_text(_lenght):
     division_1_text.centerx = area_scroll_bar_x + 460
 
 
+# alan metnini güncelleme
 def update_area_value_text(_area):
     global area_value_font, area_value_rect, cable_area_y
     area_value_font = font.render((f"%.2f" %_area), True, BLACK)
