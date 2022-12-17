@@ -291,6 +291,7 @@ def update_area_value_text(_area):
     cable_area_y = int(_area * 5) + 5
 
 
+#alan sembolünün büyüklüğünnü güncelleme
 def update_division_area_size(_area):
     global division_area_font, division_area, division_area_text
     division_area_font = pygame.font.Font(pygame.font.get_default_font(), int(_area * 10) + 15 )
