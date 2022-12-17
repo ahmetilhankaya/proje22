@@ -275,4 +275,6 @@ def update_area_value_text(_lenght):
     global length_font, division_l, division_l_text
     lengh_font = pygame.font.Font(pygame.font.get_default_font(), int(_lenght) * 10 + 15 )
     division_1 = length_font.render('L',True, pygame.Color(0,0,0,255))
+    division_1_text = division_1.get_rect()
+    
 
