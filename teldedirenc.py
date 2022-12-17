@@ -263,9 +263,16 @@ def update_division_rho_size(_resistivity):
     
     # uzunluk metnini güncellemek için kullanılır
     
-    def update_len_value_text(_length):
-        global len_value_font, len_value_rect
-        len_value_font = font.render(str(_length), True, BLACK)
-        len_value_rect = len_value_font.get_rect()
-        len_value_rect.top = len_scroll_bar_y + len_scroll_bar_height + 14
-        len_value_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
+def update_len_value_text(_length):
+    global len_value_font, len_value_rect
+    len_value_font = font.render(str(_length), True, BLACK)
+    len_value_rect = len_value_font.get_rect()
+    len_value_rect.top = len_scroll_bar_y + len_scroll_bar_height + 14
+    len_value_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
+
+
+def update_area_value_text(_lenght):
+    global length_font, division_l, division_l_text
+    lengh_font = pygame.font.Font(pygame.font.get_default_font(), int(_lenght) * 10 + 15 )
+    division_1 = length_font.render('L',True, pygame.Color(0,0,0,255))
+
