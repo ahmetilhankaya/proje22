@@ -310,6 +310,7 @@ def run_game():
     global rho_scroll_box_dragging , len_scroll_box_dragging , area_scroll_box_dragging , division_r , division_r_text , calculated_resistance , calculated_resistance_text ,cable_color , cable_length
 
     running = true
+    # uygulama kapatılmadığı sürece çalışacak
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUİT:
