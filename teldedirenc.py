@@ -300,5 +300,7 @@ def update_division_area_size(_area):
     division_area_text.centery = area_scroll_bar_y + 160
     division_area_text.centerx = area_scroll_bar_x + 390
     
+print(rho_scroll_box.y = 145, len_scroll_box.y, area_scroll_box.y)    
+    
 # oyunun ana fonksiyonu
 def run_game():
