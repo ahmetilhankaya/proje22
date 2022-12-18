@@ -314,5 +314,6 @@ def run_game():
     while running:
         # oyun içindeki hareketleri görmek için kullanıyoruz
         for event in pygame.event.get():
+            # eğer çıkış yapıldıysa (x işsaretine basarak oyunu kapatmak)
             if event.type == pygame.QUİT:
                 running = False
