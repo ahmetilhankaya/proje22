@@ -301,7 +301,7 @@ def update_division_area_size(_area):
     division_area_text.centerx = area_scroll_bar_x + 390
     
 # kırmızı kutuların ilk koordinatlarını göremke için:    
-print(rho_scroll_box.y = 145, len_scroll_box.y, area_scroll_box.y) 
+#print(rho_scroll_box.y = 145, len_scroll_box.y, area_scroll_box.y) 
 
     
 # oyunun ana fonksiyonu
