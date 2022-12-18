@@ -306,4 +306,5 @@ def update_division_area_size(_area):
     
 # oyunun ana fonksiyonu
 def run_game():
+    # global değişkenleri fonksiyonun içinde kullanmak için tanımlama yapıyoruz
     global rho_scroll_box_dragging , len_scroll_box_dragging , area_scroll_box_dragging , division_r , division_r_text , calculated_resistance , calculated_resistance_text , cable_color , cable_length
