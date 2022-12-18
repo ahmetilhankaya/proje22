@@ -313,3 +313,4 @@ def run_game():
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUİT:
+                running = False
