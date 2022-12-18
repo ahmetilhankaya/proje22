@@ -311,3 +311,4 @@ def run_game():
 
     running = true
     while running:
+        for event in pygame.event.get():
