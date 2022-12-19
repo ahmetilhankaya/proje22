@@ -318,3 +318,5 @@ def run_game():
             # döngüyü sonlandır
             if event.type == pygame.QUİT:
                 running = False
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                
