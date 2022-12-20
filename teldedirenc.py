@@ -328,4 +328,4 @@ def run_game():
                         
                         rho_scroll_box.y = 145
                         len_scroll_box.y = 143
-                        
+                        area_scroll_box.y = 160
