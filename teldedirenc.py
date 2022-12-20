@@ -354,4 +354,5 @@ def run_game():
                 # rho kutusu hareket ettiriliyorsa; (rho_scroll_box_dragging "True" demektir)
                 if rho_scroll_box_dragging:
                     # event değişkeninden imlecin yeni konumunu bul
+                    # kırmızı kutular sadece y ekseninde hareket ettiği için x değişkeni gerekli değil
         
