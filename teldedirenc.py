@@ -349,3 +349,5 @@ def run_game():
                     rho_scroll_box_dragging = False
                     len_scroll_box_dragging = False
                     area_scroll_box_dragging = False
+            elif  event.type == pygame.MOUSEMOTION:
+        
