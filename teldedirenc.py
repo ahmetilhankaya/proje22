@@ -344,6 +344,4 @@ def run_game():
 
             elif event.type == pygame.MOUSEBUTTONUP :
                 if event.button == 1 :
-                    
-
-
+                    rho_scroll_box_dragging = False
