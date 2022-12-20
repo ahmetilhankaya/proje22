@@ -337,5 +337,6 @@ def run_game():
                         len_scroll_box_dragging = True
 
                     elif area_scroll_box.collidepoint(event.pos) :
+                        area_scroll_box_dragging = True
                         
 
