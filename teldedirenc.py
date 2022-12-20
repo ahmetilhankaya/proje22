@@ -351,5 +351,6 @@ def run_game():
                     area_scroll_box_dragging = False
             # mouse hareket ettiriliyorken hangi kutuyu sürüklüyorsa onu hareket ettir (pozisyonunu güncelleme)        
             elif  event.type == pygame.MOUSEMOTION:
+                # rho kutusu hareket ettiriliyorsa; (rho_scroll_box_dragging "True" demektir)
                 if rho_scroll_box_dragging:
         
