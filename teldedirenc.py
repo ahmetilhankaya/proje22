@@ -342,6 +342,8 @@ def run_game():
                     elif area_scroll_box.collidepoint(event.pos) :
                         area_scroll_box_dragging = True
 
+#sol click'e basmayı bırakırsak kırmızı kutuları hareket ettirmeyi de bırakırız
+
             elif event.type == pygame.MOUSEBUTTONUP :
                 if event.button == 1 :
                     rho_scroll_box_dragging = False
