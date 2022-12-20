@@ -322,4 +322,7 @@ def run_game():
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 # sol click
                 if event.button == 1:
-                
+                #reset yazısına tıklandığında kutuların değerlerini ilk andaki değerlere getir.
+
+                    if reset_text.get_rect().collidepoint(event.pos) :
+                        
