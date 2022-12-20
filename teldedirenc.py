@@ -322,13 +322,16 @@ def run_game():
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 # sol click
                 if event.button == 1:
-                #reset yazısına tıklandığında kutuların değerlerini ilk andaki değerlere getir.
+#reset yazısına tıklandığında kutuların değerlerini ilk andaki değerlere getir.
 
                     if reset_text.get_rect().collidepoint(event.pos) :
                         
                         rho_scroll_box.y = 145
                         len_scroll_box.y = 143
                         area_scroll_box.y = 160
+
+#rho kırmızı kutusu ile mouse üst üste geldiyse (collide point)
+#rho kutusu hareket ettiriliyor demektir, aynısı uzunluk ve alan için de geçerlidir
 
                     elif rho_scroll_box.collidepoint(event.pos) :
                         rho_scroll_box_dragging = True
@@ -338,5 +341,5 @@ def run_game():
 
                     elif area_scroll_box.collidepoint(event.pos) :
                         area_scroll_box_dragging = True
-                        
+
 
