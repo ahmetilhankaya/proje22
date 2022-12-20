@@ -326,3 +326,4 @@ def run_game():
 
                     if reset_text.get_rect().collidepoint(event.pos) :
                         
+                        rho_scroll_box.y = 145
