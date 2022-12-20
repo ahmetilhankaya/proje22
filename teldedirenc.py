@@ -355,4 +355,5 @@ def run_game():
                 if rho_scroll_box_dragging:
                     # event değişkeninden imlecin yeni konumunu bul
                     # kırmızı kutular sadece y ekseninde hareket ettiği için x değişkeni gerekli değil
+                    _, mouse.y = event.pos
         
