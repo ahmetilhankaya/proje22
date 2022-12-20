@@ -342,4 +342,7 @@ def run_game():
                     elif area_scroll_box.collidepoint(event.pos) :
                         area_scroll_box_dragging = True
 
+            elif event.type == pygame.MOUSEBUTTONUP :
+                
+
 
