@@ -343,6 +343,7 @@ def run_game():
                         area_scroll_box_dragging = True
 
             elif event.type == pygame.MOUSEBUTTONUP :
-                
+                if event.button == 1 :
+                    
 
 
