@@ -353,4 +353,5 @@ def run_game():
             elif  event.type == pygame.MOUSEMOTION:
                 # rho kutusu hareket ettiriliyorsa; (rho_scroll_box_dragging "True" demektir)
                 if rho_scroll_box_dragging:
+                    # event değişkeninden imlecin yeni konumunu bul
         
