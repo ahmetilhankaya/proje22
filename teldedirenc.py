@@ -346,3 +346,4 @@ def run_game():
                 if event.button == 1 :
                     rho_scroll_box_dragging = False
                     len_scroll_box_dragging = False
+                    area_scroll_box_dragging = False
