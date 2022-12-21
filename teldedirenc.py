@@ -373,5 +373,6 @@ def run_game():
                     
                     if mouse_y >= len_scroll_box_y - len_scroll_box_height/2 and mouse_y <= len_scroll_bar_y + len_scroll_bar_height - len_scroll_box_height/2:
                         offset_y = mouse_y - len_scroll_box.y
+                        len_scroll_box.y = mouse_y
 
                     
