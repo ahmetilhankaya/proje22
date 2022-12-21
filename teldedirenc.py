@@ -357,4 +357,7 @@ def run_game():
                     # kırmızı kutular sadece y ekseninde hareket ettiği için x değişkeni gerekli değil
                     # o nedenle "_" ile gerekli olmadığını belirtiyoruz
                     _, mouse.y = event.pos
+
+                    if mouse_y >= rho_scroll_bar_y - rho_scroll_box_height / 2 and mouse_y <= rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box_height / 2 :
+                        
         
