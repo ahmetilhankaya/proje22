@@ -375,4 +375,4 @@ def run_game():
                         offset_y = mouse_y - len_scroll_box.y
                         len_scroll_box.y = mouse_y
 
-                    
+               if area_scroll_box_dragging:     
