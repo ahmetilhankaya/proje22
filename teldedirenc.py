@@ -379,5 +379,6 @@ def run_game():
                     _, mouuse_y = event.pos
                     
                     if mouse_y >= area_scroll_bar_y - area_scroll_box_height/2 and mouse_y <= area_scroll_bar_y + area_scroll_bar_height - area_scroll_box_height/2:
+                        offset_y = mouse_y - area_scroll_box.y
 
             
