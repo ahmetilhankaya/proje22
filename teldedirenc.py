@@ -358,6 +358,12 @@ def run_game():
                     # o nedenle "_" ile gerekli olmadığını belirtiyoruz
                     _, mouse_y = event.pos
 
+# burada mouse konumunun y ekseninde siyah çubuğun alanında olup olmadığını kontrol ediyoruz.
+# diğer değişkenler için de aynı kontroller geçerli 
+# eğer mouse konumu siyah çubuğun tepesinin üstündeyse , yani çubuğun üstündeyse , kırmızı kutuyu hareket ettirme
+# aynı şekilde mouse konumu çubuğun tabanından aşağıdaysa da kırmızı kutuyu hareket ettirme
+# eğer mouse siyah çubuğun alanındaysa y ekseninde kırmızı kutuyu hareket ettir.
+
                     if mouse_y >= rho_scroll_bar_y - rho_scroll_box_height / 2 and mouse_y <= rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box_height / 2 :
                         offset_y = mouse_y - rho_scroll_box.y
                         rho_scroll_box.y = mouse_y
