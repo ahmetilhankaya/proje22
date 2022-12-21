@@ -369,4 +369,6 @@ def run_game():
                         rho_scroll_box.y = mouse_y
 
                 if len_scroll_box_dragging :
+                    _, mouse_y = event.pos 
+
                     
