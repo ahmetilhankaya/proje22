@@ -370,5 +370,7 @@ def run_game():
 
                 if len_scroll_box_dragging :
                     _, mouse_y = event.pos 
+                    
+                    if mouse_y >= len_scroll_box_y - len_scroll_box_height/2 and mouse_y <= len_scroll_bar_y + len_scroll_bar_height - len_scroll_box_height/2:
 
                     
