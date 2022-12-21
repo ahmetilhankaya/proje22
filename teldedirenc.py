@@ -356,7 +356,7 @@ def run_game():
                     # event değişkeninden imlecin yeni konumunu bul
                     # kırmızı kutular sadece y ekseninde hareket ettiği için x değişkeni gerekli değil
                     # o nedenle "_" ile gerekli olmadığını belirtiyoruz
-                    _, mouse.y = event.pos
+                    _, mouse_y = event.pos
 
                     if mouse_y >= rho_scroll_bar_y - rho_scroll_box_height / 2 and mouse_y <= rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box_height / 2 :
                         offset_y = mouse_y - rho_scroll_box.y
