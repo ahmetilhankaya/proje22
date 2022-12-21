@@ -367,3 +367,6 @@ def run_game():
                     if mouse_y >= rho_scroll_bar_y - rho_scroll_box_height / 2 and mouse_y <= rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box_height / 2 :
                         offset_y = mouse_y - rho_scroll_box.y
                         rho_scroll_box.y = mouse_y
+
+                if len_scroll_box_dragging :
+                    
