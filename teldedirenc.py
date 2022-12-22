@@ -406,6 +406,7 @@ def run_game():
                 division_r = resistance_font.render('R', False, pygame.Color(12,58,160,255))
                 division_r_text = division_r.get_rect()
                 division_r_text.centery = area_scroll_bar_y + 70
+                division_r_text.centerx = area_scroll_bar_x + 130
 
 
 
