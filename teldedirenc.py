@@ -396,7 +396,7 @@ def run_game():
                 update_len_value_text(_length)
                 update_division_l_size(_length)
                 update_rho_value_text(_resistivity)
-                
+                update_division_rho_size(_resistivity)
 
 
 
