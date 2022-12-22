@@ -389,4 +389,5 @@ def run_game():
                 _length = length()
                 _resistivity = resistivity()
                 _res = resistance()
+                
 
