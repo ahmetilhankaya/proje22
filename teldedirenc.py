@@ -386,4 +386,4 @@ def run_game():
                 # işlemler yapıldıktan sonra değerlerin değişip değişmediğini kontrol et!
 
                 _area = area()
-                _length = lenght()
+                _length = length()
