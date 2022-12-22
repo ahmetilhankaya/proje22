@@ -387,3 +387,4 @@ def run_game():
 
                 _area = area()
                 _length = length()
+                
