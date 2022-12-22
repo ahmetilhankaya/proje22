@@ -383,3 +383,5 @@ def run_game():
                        area_scroll_box.y = mouse_y
 
             
+                # işlemler yapıldıktan sonra değerlerin değişip değişmediğini kontrol et!
+                
