@@ -402,7 +402,8 @@ def run_game():
                 # kablo rengini ve kablo uzunluğunu yeniden hesapla
                 cable_color = (int(_resistivity*255)
                 cable_length = int(_length*10) + 5
-                
+                               
+                # denklemde kullanılan direnç sembolünün boyutunu güncellee
                 resistance_font = pygame.font.Font(pygame.font.get_default_font(), int(_res) + 10)
                 division_r = resistance_font.render('R', False, pygame.Color(12,58,160,255))
                 division_r_text = division_r.get_rect()
