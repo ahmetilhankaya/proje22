@@ -394,6 +394,6 @@ def run_game():
                 update_area_value_text(_area)
                 update_division_area_size(_area)
                 update_len_value_text(_length)
-                update_division_1_size(_length)
-                
+                update_division_l_size(_length)
+
 
