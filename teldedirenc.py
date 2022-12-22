@@ -399,6 +399,7 @@ def run_game():
                 update_division_rho_size(_resistivity)
                 
                 cable_color = (int(_resistivity*255), 0,0)
+                cable_length = int(_length*10) + 5
                 
 
 
