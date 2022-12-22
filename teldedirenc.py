@@ -398,8 +398,9 @@ def run_game():
                 update_rho_value_text(_resistivity)
                 update_division_rho_size(_resistivity)
                 
-                cable_color = (int(_resistivity*255), 0,0)
                 
+                # kablo rengini ve kablo uzunluğunu yeniden hesapla
+                cable_color = (int(_resistivity*255)
                 cable_length = int(_length*10) + 5
                 
                 resistance_font = pygame.font.Font(pygame.font.get_default_font(), int(_res) + 10)
