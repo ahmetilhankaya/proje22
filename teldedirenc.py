@@ -391,5 +391,5 @@ def run_game():
                 _res = resistance()
 
                 # ekrandaki metinleri yenile
-                
+                update_area_value_text(_area)
 
