@@ -272,7 +272,7 @@ def update_len_value_text(_length):
 
 # uzunluk sembolünün büyüklüğünü güncellemek için kullanılır
 
-def update_area_value_text(_lenght):
+def update_division_l_size(_lenght):
     global length_font, division_l, division_l_text
     lengh_font = pygame.font.Font(pygame.font.get_default_font(), int(_lenght) * 10 + 15 )
     division_1 = length_font.render('L',True, pygame.Color(0,0,0,255))
@@ -394,5 +394,6 @@ def run_game():
                 update_area_value_text(_area)
                 update_division_area_size(_area)
                 update_len_value_text(_length)
+                update_division_1_size(_length)
                 
 
