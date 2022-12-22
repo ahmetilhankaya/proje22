@@ -392,5 +392,5 @@ def run_game():
 
                 # ekrandaki metinleri yenile
                 update_area_value_text(_area)
-                
+                update_division_area_size(_area)
 
