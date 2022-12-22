@@ -390,5 +390,5 @@ def run_game():
                 _resistivity = resistivity()
                 _res = resistance()
 
-                # ekrandaki metinleri yenlee
+                # ekrandaki metinleri yenile
 
