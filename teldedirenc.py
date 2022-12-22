@@ -401,6 +401,8 @@ def run_game():
                 cable_color = (int(_resistivity*255), 0,0)
                 cable_length = int(_length*10) + 5
                 
+                resistance_font = pygame.font.Font(pygame.font.get_default_font(), int(_res) + 10)
+                
 
 
 
