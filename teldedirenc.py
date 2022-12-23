@@ -420,7 +420,7 @@ def run_game():
         screen.fill(WHITE)
 
 
-        
+        screen.bilt(division_r, division_r_text)
 
 
 
