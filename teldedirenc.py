@@ -412,6 +412,8 @@ def run_game():
 
 
                 calculated_resistance = calculated_resistance_font.render(f"resistance = %g Ω" %_res, True, pygame.Color(255,0,0,255))
-
+                calculated_resistance_text = calculated_resistance.get_rect()
+                calculated_resistance_text.x = int(240)
+                
 
 
