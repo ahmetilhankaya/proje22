@@ -379,8 +379,8 @@ def run_game():
                     _, mouuse_y = event.pos
                     
                     if mouse_y >= area_scroll_bar_y - area_scroll_box_height/2 and mouse_y <= area_scroll_bar_y + area_scroll_bar_height - area_scroll_box_height/2:
-                       offset_y = mouse_y - area_scroll_box.y
-                       area_scroll_box.y = mouse_y
+                        offset_y = mouse_y - area_scroll_box.y
+                        area_scroll_box.y = mouse_y
 
             
                 # işlemler yapıldıktan sonra değerlerin değişip değişmediğini kontrol et!
@@ -400,15 +400,18 @@ def run_game():
                 
                 
                 # kablo rengini ve kablo uzunluğunu yeniden hesapla
-                cable_color = (int(_resistivity*255)
+                cable_color = (int(_resistivity*255), 0,0)
                 cable_length = int(_length*10) + 5
-                               
+                
                 # denklemde kullanılan direnç sembolünün boyutunu güncelle
                 resistance_font = pygame.font.Font(pygame.font.get_default_font(), int(_res) + 10)
                 division_r = resistance_font.render('R', False, pygame.Color(12,58,160,255))
                 division_r_text = division_r.get_rect()
                 division_r_text.centery = area_scroll_bar_y + 70
                 division_r_text.centerx = area_scroll_bar_x + 130
+
+
+                calculated_resistance = calculated_resistance_font.render(f"resistance = %g Ω" %_res, True, pygame.Color(255,0,0,255))
 
 
 
