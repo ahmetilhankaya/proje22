@@ -174,7 +174,7 @@ area_value_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width /2)
 #direnç hesabı
 def resistance():
     _resistivity = resistivity()
-    _lenght = lenght()
+    _lenght = length()
     _area = area()
     _resistance = _resistivity * _lenght / _area
 
@@ -309,7 +309,7 @@ def run_game():
     # global değişkenleri fonksiyonun içinde kullanmak için tanımlama yapıyoruz
     global rho_scroll_box_dragging , len_scroll_box_dragging , area_scroll_box_dragging , division_r , division_r_text , calculated_resistance , calculated_resistance_text ,cable_color , cable_length
 
-    running = true
+    running = True
     # uygulama kapatılmadığı sürece çalışacak
     while running:
         # oyun içindeki hareketleri görmek için kullanıyoruz
@@ -414,6 +414,8 @@ def run_game():
                 calculated_resistance = calculated_resistance_font.render(f"resistance = %g Ω" %_res, True, pygame.Color(255,0,0,255))
                 calculated_resistance_text = calculated_resistance.get_rect()
                 calculated_resistance_text.x = int(240)
-                
+                calculated_resistance_text.bottom = cable_start_y - 30
+
+
 
 
