@@ -434,11 +434,12 @@ def run_game():
         pygame.draw.rect(screen, BLACK, area_scroll_bar)
         pygame.draw.rect(screen, RED, area_scroll_box, border_radius=2)
         
-        screen.blint(rho_font, rho_rect)
-        screen.blint(rho_name_font, rho_name_rect)
-        screen.blint(len_font, len_rect)
-        screen.blint(len_name_font, len_name_rect)
-        screen.blint(area_font, area_rect)
+        screen.blit(rho_font, rho_rect)
+        screen.blit(rho_name_font, rho_name_rect)
+        screen.blit(len_font, len_rect)
+        screen.blit(len_name_font, len_name_rect)
+        screen.blit(area_font, area_rect)
+        screen.blit(area_name_font, area_name_rect)
 
 
 
