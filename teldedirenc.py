@@ -424,6 +424,7 @@ def run_game():
         screen.bilt(division_r, division_r_text)
 
         pygame.draw.rect(screen, BLACK, rho_scroll_bar)
+        pygame.draw.rect(screen, RED, rho_scroll_box,border_radius=2)
 
 
 
