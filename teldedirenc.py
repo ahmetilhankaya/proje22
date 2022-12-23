@@ -438,6 +438,7 @@ def run_game():
         screen.blint(rho_name_font, rho_name_rect)
         screen.blint(len_font, len_rect)
         screen.blint(len_name_font, len_name_rect)
+        screen.blint(area_font, area_rect)
 
 
 
