@@ -410,7 +410,7 @@ def run_game():
                 division_r_text.centery = area_scroll_bar_y + 70
                 division_r_text.centerx = area_scroll_bar_x + 130
 
-
+                #kablonun yukarısında bulunan direnç değerinin yazdığı metni güncelle 
                 calculated_resistance = calculated_resistance_font.render(f"resistance = %g Ω" %_res, True, pygame.Color(255,0,0,255))
                 calculated_resistance_text = calculated_resistance.get_rect()
                 calculated_resistance_text.x = int(240)
