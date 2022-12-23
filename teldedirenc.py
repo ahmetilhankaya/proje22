@@ -416,6 +416,9 @@ def run_game():
                 calculated_resistance_text.x = int(240)
                 calculated_resistance_text.bottom = cable_start_y - 30
 
+        
+        screen.fill(WHITE)
+
 
 
 
