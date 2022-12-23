@@ -418,10 +418,12 @@ def run_game():
 
         # ekranı beyaza boya
         screen.fill(WHITE)
-        
+
         # ilk öncce R sembolünü ekrana bastır(bu sayede R fazla büyüdüğünde diğer metinlerin arkasındaymış gibi görünür)
         #  bu kodu diğerleinden sonra çalıştırırsak R harfi başka harflerin üstünde kalabilir
         screen.bilt(division_r, division_r_text)
+
+        pygame.draw.rect(screen, BLACK, rho_scroll_bar)
 
 
 
