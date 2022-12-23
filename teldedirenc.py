@@ -429,6 +429,8 @@ def run_game():
         # uzunluk çubuğu ve hareket eden kutu
         pygame.draw.rect(screen, BLACK, len_scroll_bar)
         pygame.draw.rect(screen, RED, len_scroll_box,border_radius=2)
+        
+        pygame.draw.rect(screen, BLACK, len_scroll_bar)
 
 
 
