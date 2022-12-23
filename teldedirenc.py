@@ -433,6 +433,8 @@ def run_game():
         # area çubuğu ve hareket eden kutu
         pygame.draw.rect(screen, BLACK, area_scroll_bar)
         pygame.draw.rect(screen, RED, area_scroll_box, border_radius=2)
+        
+        screen.blint(rho_font, rho_rect)
 
 
 
