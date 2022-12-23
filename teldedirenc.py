@@ -434,6 +434,7 @@ def run_game():
         pygame.draw.rect(screen, BLACK, area_scroll_bar)
         pygame.draw.rect(screen, RED, area_scroll_box, border_radius=2)
         
+        # sırayla metinleri ekrana yazdır, önce font daha sonra bu fonttaki yazının içinde bulunduğu metin kutusu gerekli.
         screen.blit(rho_font, rho_rect)
         screen.blit(rho_name_font, rho_name_rect)
         screen.blit(len_font, len_rect)
