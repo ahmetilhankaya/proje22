@@ -432,6 +432,8 @@ def run_game():
         
         pygame.draw.rect(screen, BLACK, len_scroll_bar)
         pygame.draw.rect(screen, RED, len_scroll_box, border_radius=2)
+        
+        pygame.draw.rect(screen, BLACK, area_scroll_bar)
 
 
 
