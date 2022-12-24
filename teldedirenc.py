@@ -443,6 +443,7 @@ def run_game():
         screen.blit(area_name_font, area_name_rect)
         
         # reset yazısını ekranın sol üstünde görüntüle
+        screen.blit(reset_text, (0,0))
 
 
 
