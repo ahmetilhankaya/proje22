@@ -444,6 +444,8 @@ def run_game():
         
         # reset yazısını ekranın sol üstünde görüntüle
         screen.blit(reset_text, (0,0))
+        
+        screen.blit(equal_sign, equal_sign_text)
 
 
 
