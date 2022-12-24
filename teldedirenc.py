@@ -445,6 +445,7 @@ def run_game():
         # reset yazısını ekranın sol üstünde görüntüle
         screen.blit(reset_text, (0,0))
         
+        # denklem için kullanılan semboller
         screen.blit(equal_sign, equal_sign_text)
         screen.blit(division_rho, division_rho_text)
         screen.blit(division_1, division_1_text)
