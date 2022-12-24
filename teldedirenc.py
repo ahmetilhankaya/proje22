@@ -446,6 +446,7 @@ def run_game():
         screen.blit(reset_text, (0,0))
         
         screen.blit(equal_sign, equal_sign_text)
+        screen.blit(division_rho, division_rho_text)
 
 
 
