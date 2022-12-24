@@ -441,6 +441,8 @@ def run_game():
         screen.blit(len_name_font, len_name_rect)
         screen.blit(area_font, area_rect)
         screen.blit(area_name_font, area_name_rect)
+        
+        # reset yazısını ekranın sol üstünde görüntüle
 
 
 
