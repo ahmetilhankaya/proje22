@@ -454,6 +454,7 @@ def run_game():
         
         screen.blit(calculated_resistance, calculated_resistance_text)
         screen.blit(rho_value_font, rho_value_rect)
+        screen.blit(len_value_font, len_value_rect)
 
 
 
