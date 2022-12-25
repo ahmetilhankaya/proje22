@@ -452,6 +452,7 @@ def run_game():
         pygame.draw.rect(screen, BLACK, division_line)
         screen.blit(division_area, division_area_text)
         
+        # değerlerin bulunduğu metinleri güncelle
         screen.blit(calculated_resistance, calculated_resistance_text)
         screen.blit(rho_value_font, rho_value_rect)
         screen.blit(len_value_font, len_value_rect)
