@@ -451,6 +451,8 @@ def run_game():
         screen.blit(division_1, division_1_text)
         pygame.draw.rect(screen, BLACK, division_line)
         screen.blit(division_area, division_area_text)
+        
+        screen.blit(calculated_resistance, calculated_resistance_text)
 
 
 
