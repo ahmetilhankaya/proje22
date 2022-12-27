@@ -457,6 +457,8 @@ def run_game():
         screen.blit(rho_value_font, rho_value_rect)
         screen.blit(len_value_font, len_value_rect)
         screen.blit(area_value_font, area_value_rect)
+        
+        ellipse_start = pygame.Rect(cable_start_x, cable_start_y, cable_area_x, cable_area_y)
 
 
 
