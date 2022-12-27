@@ -458,6 +458,7 @@ def run_game():
         screen.blit(len_value_font, len_value_rect)
         screen.blit(area_value_font, area_value_rect)
         
+        # kabloyu çizmek
         ellipse_start = pygame.Rect(cable_start_x, cable_start_y, cable_area_x, cable_area_y)
         pygame.draw.ellipse(screen, cable_color, ellipse_start)
         pygame.draw.rect(screen, cable_color, (ellipse_start.centerx, ellipse_start.y, cable_length * 2 + 10, cable_area_y))
