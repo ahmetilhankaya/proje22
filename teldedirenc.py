@@ -460,6 +460,7 @@ def run_game():
         
         ellipse_start = pygame.Rect(cable_start_x, cable_start_y, cable_area_x, cable_area_y)
         pygame.draw.ellipse(screen, cable_color, ellipse_start)
+        pygame.draw.rect(screen, cable_color, (ellipse_start.centerx, ellipse_start.y, cable_length * 2 + 10, cable_area_y))
 
 
 
