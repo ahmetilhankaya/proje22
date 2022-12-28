@@ -469,7 +469,7 @@ def run_game():
         pygame.draw.ellipse(screen, cable_color, ellipse_end)
         
         pygame.draw.polygon(screen, BLACK,
-        ((ellipse_start.x, ellipse_start.y + 50)                    
+        ((ellipse_start.x, ellipse_start.y - 50)            
 
 
 
