@@ -472,7 +472,7 @@ def run_game():
         # kablonun üstündeki ok işareti için çokgen çizdik
         pygame.draw.polygon(screen, BLACK,
         ((ellipse_start.x, ellipse_start.y - 50), (ellipse_start.x, ellipse_start.y - 30),
-                (ellipse_start.x + 100, ellipse_start.y -30), (ellipse_start.x + 100, ellipse_start.y - 20), ))
+                (ellipse_start.x + 100, ellipse_start.y -30), (ellipse_start.x + 100, ellipse_start.y - 20), (ellipse_start.x + 120, ellipse_start.y - 40) ))
         pygame.display.update()
         # Ekranı yenileme hızı için FPS değişkenini saat ile kullanıyoruz
         clock.tick(FPS)
