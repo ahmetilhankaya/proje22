@@ -421,7 +421,7 @@ def run_game():
 
         # ilk öncce R sembolünü ekrana bastır(bu sayede R fazla büyüdüğünde diğer metinlerin arkasındaymış gibi görünür)
         #  bu kodu diğerleinden sonra çalıştırırsak R harfi başka harflerin üstünde kalabilir
-        screen.bilt(division_r, division_r_text)
+        screen.blit(division_r, division_r_text)
         # özdirenç çubuğu ve hareket eden kutu
         pygame.draw.rect(screen, BLACK, rho_scroll_bar)
         pygame.draw.rect(screen, RED, rho_scroll_box,border_radius=2)
