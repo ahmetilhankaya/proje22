@@ -481,6 +481,9 @@ def run_game():
 
     pygame.quit()
 
+if __name__ == "__main__":
+    
+
 
 
 
