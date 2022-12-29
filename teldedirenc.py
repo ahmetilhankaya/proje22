@@ -1,4 +1,5 @@
 import pygame
+# sıfırlama butonu yorum satırları
 
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 600
