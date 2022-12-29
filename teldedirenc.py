@@ -471,7 +471,7 @@ def run_game():
         pygame.draw.polygon(screen, BLACK,
         ((ellipse_start.x, ellipse_start.y - 50), (ellipse_start.x, ellipse_start.y - 30),
                 (ellipse_start.x + 100, ellipse_start.y - 30), (ellipse_start.x + 100, ellipse_start.y - 20), (ellipse_satrt.x + 120, ellipse_start.y - 40)
-
+                (ellipse_start.x + 100, ellipse_start.y - 60), (ellipse_start + 100, ellipse_start.y _ 50 )))
 
 
 
