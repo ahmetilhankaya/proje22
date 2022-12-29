@@ -479,6 +479,8 @@ def run_game():
         # Ekranı yenileme hızı için FPS değişkenini saat ile kullanıyoruz
         clock.tick(FPS)
 
+    pygame.quit()
+
 
 
 
