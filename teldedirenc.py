@@ -467,7 +467,9 @@ def run_game():
         pygame.draw.rect(screen, cable_color, (ellipse_start.centerx, ellipse_start.y, cable_length * 2 + 10, cable_area_y))
         ellipse_end = pygame.Rect(cable_start_x + cable_length * 2 + 10, cable_start_y, cable_area_x, cable_area_y)
         pygame.draw.ellipse(screen, cable_color, ellipse_end)
+
         # Kablonun üstündeki akımın yönünü gösteren ok
+        # kablonun üstündeki ok işareti için çokgen çizdik
         pygame.draw.polygon(screen, BLACK,
         ((ellipse_start.x, ellipse_start.y - 50), (ellipse_start.x, ellipse_start.y - 30),
                 (ellipse_start.x + 100, ellipse_start.y - 30), (ellipse_start.x + 100, ellipse_start.y - 20), (ellipse_satrt.x + 120, ellipse_start.y - 40),
