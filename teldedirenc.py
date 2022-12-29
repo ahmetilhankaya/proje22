@@ -316,7 +316,7 @@ def run_game():
         for event in pygame.event.get():
             # eğer çıkış yapıldıysa (x işsaretine basarak oyunu kapatmak)
             # döngüyü sonlandır
-            if event.type == pygame.QUİT:
+            if event.type == pygame.QUIT:
                 running = False
             # eğer mouse'a basıldıysa    
             elif event.type == pygame.MOUSEBUTTONDOWN:
