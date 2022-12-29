@@ -470,7 +470,7 @@ def run_game():
 
         # Kablonun üstündeki akımın yönünü gösteren ok
         # kablonun üstündeki ok işareti için çokgen çizdik
-        
+        pygame.draw.polygon(screen, BLACK,)
         pygame.display.update()
         # Ekranı yenileme hızı için FPS değişkenini saat ile kullanıyoruz
         clock.tick(FPS)
