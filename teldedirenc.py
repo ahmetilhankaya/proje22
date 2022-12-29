@@ -165,7 +165,7 @@ def area():
 
 #area değerinin ekrana yazılması
 
-area_value_font = font.render(f"%.2f" %area(), True, pygame.color(0,0,0,255))
+area_value_font = font.render(f"%.2f" %area(), True, pygame.Color(0,0,0,255))
 area_value_rect = area_value_font.get_rect()
 area_value_rect.top = area_scroll_bar_y + area_scroll_bar_height + 10
 area_value_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width /2)
