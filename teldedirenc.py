@@ -299,7 +299,7 @@ def update_area_value_text(_area):
 def update_division_area_size(_area):
     global division_area_font, division_area, division_area_text
     division_area_font = pygame.font.Font(pygame.font.get_default_font(), int(_area * 10) + 15 )
-    division_area = division_area_font.render('A', True, pygame.color(0,0,0,255))
+    division_area = division_area_font.render('A', True, pygame.Color(0,0,0,255))
     division_area_text = division_area.get_rect()
     division_area_text.centery = area_scroll_bar_y + 160
     division_area_text.centerx = area_scroll_bar_x + 390
@@ -318,6 +318,7 @@ def run_game():
     while running:
         # oyun içindeki hareketleri görmek için kullanıyoruz
         for event in pygame.event.get():
+
             # eğer çıkış yapıldıysa (x işsaretine basarak oyunu kapatmak)
             # döngüyü sonlandır
             if event.type == pygame.QUIT:
@@ -326,17 +327,15 @@ def run_game():
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 # sol click
                 if event.button == 1:
-#reset yazısına tıklandığında kutuların değerlerini ilk andaki değerlere getir.
-
+                    #reset yazısına tıklandığında kutuların değerlerini ilk andaki değerlere getir.
                     if reset_text.get_rect().collidepoint(event.pos) :
                         
                         rho_scroll_box.y = 145
                         len_scroll_box.y = 143
                         area_scroll_box.y = 160
-
-#rho kırmızı kutusu ile mouse üst üste geldiyse (collide point)
-#rho kutusu hareket ettiriliyor demektir, aynısı uzunluk ve alan için de geçerlidir
-
+                    #rho kırmızı kutusu ile mouse üst üste geldiyse (collide point)
+                    #rho kutusu hareket ettiriliyor demektir, aynısı uzunluk ve alan için de geçerlidir
+                    
                     elif rho_scroll_box.collidepoint(event.pos) :
                         rho_scroll_box_dragging = True
 
@@ -346,13 +345,14 @@ def run_game():
                     elif area_scroll_box.collidepoint(event.pos) :
                         area_scroll_box_dragging = True
 
-#sol click'e basmayı bırakırsak kırmızı kutuları hareket ettirmeyi de bırakırız
-
+            #sol click'e basmayı bırakırsak kırmızı kutuları hareket ettirmeyi de bırakırız
             elif event.type == pygame.MOUSEBUTTONUP :
                 if event.button == 1 :
                     rho_scroll_box_dragging = False
                     len_scroll_box_dragging = False
                     area_scroll_box_dragging = False
+
+
             # mouse hareket ettiriliyorken hangi kutuyu sürüklüyorsa onu hareket ettir (pozisyonunu güncelleme)        
             elif  event.type == pygame.MOUSEMOTION:
                 # rho kutusu hareket ettiriliyorsa; (rho_scroll_box_dragging "True" demektir)
