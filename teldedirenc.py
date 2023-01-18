@@ -1,6 +1,5 @@
 import pygame
 
-# sıfırlama butonu yorum satırları
 # sabit değerler
 
 
