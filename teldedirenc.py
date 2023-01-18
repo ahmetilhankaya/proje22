@@ -49,10 +49,10 @@ rho_scroll_box_dragging = False
 
 # öz direnç çubuğunun biraz üstünde öz direnç yazısı bulunuyor.
 
-rho_name_font = font.render('Resistivity(Ωcm)', True, pygame.Color(0,0,0,255))
+rho_name_font = font.render('Resistivity(Ωcm)', True , pygame.Color(0,0,0,255))
 rho_name_rect = rho_name_font .get_rect()
 rho_name_rect.bottom = rho_scroll_bar_y - 10
-rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
+rho_name_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2 )
 
 # öz direnç simgesi ve yazısının fontları, pozisyonları ve renkleri:
 #       pygame.Color sınıfına mensup bir değişken oluşturulurken, 4. sıradaki argüman yazının arkaplan renginin alfa değerini belirtir,
@@ -91,7 +91,7 @@ rho_value_rect.centerx = rho_scroll_bar_x + int(rho_scroll_bar_width / 2)
 #   öz direnç için kullanılan bar ve box ile aynı özelliklere sahip
 
 len_scroll_bar_x,len_scroll_bar_y = 250, 100
-len_scroll_bar_width, len_scroll_bar_height  = 2, 95
+len_scroll_bar_width, len_scroll_bar_height  = 2, 99
 len_scroll_box_width, len_scroll_box_height = 20, 10
 len_scroll_box_x, len_scroll_box_y = len_scroll_bar_x - 9, 101 + (len_scroll_bar_height - len_scroll_box_height) / 2
 len_scroll_box = pygame.rect.Rect(len_scroll_box_x, len_scroll_box_y, len_scroll_box_width, len_scroll_box_height)
@@ -119,25 +119,25 @@ len_name_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
 # en az 1 uzunluğu elde etmek için return değerine + 1 koyarız, round() il virgül sonrası sadece 2 basamağı saklarız
 
 def length():
-        return round((len_scroll_bar_height + len_scroll_bar_y - len_scroll_box.y - (len_scroll_box.height / 2)) / 5 + 1,2)
-    
+    return round((len_scroll_bar_height + len_scroll_bar_y - len_scroll_box.y - (len_scroll_box.height / 2)) / 5 +0.2,2)
+
 # uzunluk değerinin yazıldığı metin kutusu, uzunluk çubuğunun altında yer alır, bu nedenle
 # len_value_rect.top (bu yazının tepesi) uzunluk çubuğunun biraz altında olmalıdır.
 # y ekseninde aşağı gittikçe değer artar bu nedenle 14 ekliyoruz.
 # yazıyı da çubuk ile hizalamak için x ekseninde merkezini çubuğun tam orta noktasına eşitliyoruz
 # çubuğun orta noktasını hesaplamak için de önce çubuğun x değerini(çubuğun sol üst noktası) 
 # ile çubuğun genişliğinin yarısını toplarsak, ubuğun x ekseninde orta noktasını bulmuş oluruz
-    
+
 len_value_font = font.render(str(length()), True, pygame.Color(0,0,0,255))
 len_value_rect = len_value_font.get_rect()
-len_value_rect.top = len_scroll_bar_y + len_scroll_bar_height + 14
+len_value_rect.top = len_scroll_bar_y + len_scroll_bar_height + 10
 len_value_rect.centerx = len_scroll_bar_x + int(len_scroll_bar_width / 2)
 
 # alanın değiştirilmesi için kullanılan siyah çubuk ve kırmızı kutunun koordinatları 
 area_scroll_bar_x,area_scroll_bar_y = 400, 100
 area_scroll_bar_width, area_scroll_bar_height  = 2, 99
 area_scroll_box_width, area_scroll_box_height = 20, 10
-area_scroll_box_x, area_scroll_box_y = area_scroll_bar_x - 9, 101 + (area_scroll_bar_height - area_scroll_box_height) / 1.5
+area_scroll_box_x, area_scroll_box_y = area_scroll_bar_x - 9, 101 + (area_scroll_bar_height - area_scroll_box_height) / 2
 area_scroll_box = pygame.rect.Rect(area_scroll_box_x, area_scroll_box_y, area_scroll_box_width, area_scroll_box_height)
 area_scroll_bar = pygame.rect.Rect(area_scroll_bar_x, area_scroll_bar_y, area_scroll_bar_width, area_scroll_bar_height)
 
@@ -162,7 +162,7 @@ area_name_rect.centerx = area_scroll_bar_x + int(area_scroll_bar_width /2)
 #bu değeri 14.99 ile çarpıp sonuca 0.01 ekliyoruz ve istediğimiz aralığı elde etmiş oluyoruz
 
 def area():
-    min = 0.1
+    min = 0.01
     x = (area_scroll_bar.y + area_scroll_bar_height - (area_scroll_box.y + area_scroll_box_height /2)) / area_scroll_bar_height * 14.99
     return round(min + x,2)
 
@@ -188,7 +188,7 @@ def resistance():
 reistance_font = pygame.font.Font(pygame.font.get_default_font(), int(resistance()) + 10 ) # 2. değişken font büyüklüğünü temsil eder
 division_r = reistance_font.render('R', False, pygame.Color(12,58,160,255)) # metin rengi için renk değeri seçildi
 division_r_text = division_r.get_rect()
-division_r_text.centery = area_scroll_bar_y + 70
+division_r_text.centery = area_scroll_bar_y + 73
 division_r_text.centerx = area_scroll_bar_x + 130
 
 # eşittir işareti
@@ -263,9 +263,9 @@ def update_division_rho_size(_resistivity):
     division_rho_text = division_rho.get_rect()
     division_rho_text.centery = area_scroll_bar_y
     division_rho_text.centerx = area_scroll_bar_x + 320
-    
-    # uzunluk metnini güncellemek için kullanılır
-    
+
+# uzunluk metnini güncellemek için kullanılır
+
 def update_len_value_text(_length):
     global len_value_font, len_value_rect
     len_value_font = font.render(str(_length), True, BLACK)
@@ -277,11 +277,11 @@ def update_len_value_text(_length):
 
 def update_division_l_size(_lenght):
     global length_font, division_l, division_l_text
-    lengh_font = pygame.font.Font(pygame.font.get_default_font(), int(_lenght) * 10 + 15 )
-    division_1 = length_font.render('L',True, pygame.Color(0,0,0,255))
-    division_1_text = division_1.get_rect()
-    division_1_text.centery = area_scroll_bar_y
-    division_1_text.centerx = area_scroll_bar_x + 460
+    length_font = pygame.font.Font(pygame.font.get_default_font(), int(_lenght) * 10 + 15 )
+    division_l = length_font.render('L',True, pygame.Color(0,0,0,255))
+    division_l_text = division_l.get_rect()
+    division_l_text.centery = area_scroll_bar_y
+    division_l_text.centerx = area_scroll_bar_x + 460
 
 
 # alan metnini güncelleme
@@ -353,7 +353,7 @@ def run_game():
 
 
             # mouse hareket ettiriliyorken hangi kutuyu sürüklüyorsa onu hareket ettir (pozisyonunu güncelleme)        
-            elif  event.type == pygame.MOUSEMOTION:
+            elif event.type == pygame.MOUSEMOTION:
                 # rho kutusu hareket ettiriliyorsa; (rho_scroll_box_dragging "True" demektir)
                 if rho_scroll_box_dragging:
                     # event değişkeninden imlecin yeni konumunu bul
@@ -361,25 +361,24 @@ def run_game():
                     # o nedenle "_" ile gerekli olmadığını belirtiyoruz
                     _, mouse_y = event.pos
 
-# burada mouse konumunun y ekseninde siyah çubuğun alanında olup olmadığını kontrol ediyoruz.
-# diğer değişkenler için de aynı kontroller geçerli 
-# eğer mouse konumu siyah çubuğun tepesinin üstündeyse , yani çubuğun üstündeyse , kırmızı kutuyu hareket ettirme
-# aynı şekilde mouse konumu çubuğun tabanından aşağıdaysa da kırmızı kutuyu hareket ettirme
-# eğer mouse siyah çubuğun alanındaysa y ekseninde kırmızı kutuyu hareket ettir.
-
-                    if mouse_y >= rho_scroll_bar_y - rho_scroll_box_height / 2 and mouse_y <= rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box_height / 2 :
+                    # burada mouse konumunun y ekseninde siyah çubuğun alanında olup olmadığını kontrol ediyoruz.
+                    # diğer değişkenler için de aynı kontroller geçerli 
+                    # eğer mouse konumu siyah çubuğun tepesinin üstündeyse , yani çubuğun üstündeyse , kırmızı kutuyu hareket ettirme
+                    # aynı şekilde mouse konumu çubuğun tabanından aşağıdaysa da kırmızı kutuyu hareket ettirme
+                    # eğer mouse siyah çubuğun alanındaysa y ekseninde kırmızı kutuyu hareket ettir.
+                    if mouse_y >= rho_scroll_bar_y - rho_scroll_box_height/2 and mouse_y <= rho_scroll_bar_y + rho_scroll_bar_height - rho_scroll_box_height/2:
                         offset_y = mouse_y - rho_scroll_box.y
                         rho_scroll_box.y = mouse_y
 
-                if len_scroll_box_dragging :
+                if len_scroll_box_dragging:
                     _, mouse_y = event.pos 
-                    
-                    if mouse_y >= len_scroll_box_y - len_scroll_box_height/2 and mouse_y <= len_scroll_bar_y + len_scroll_bar_height - len_scroll_box_height/2:
+
+                    if mouse_y >= len_scroll_bar_y - len_scroll_box_height/2 and mouse_y <= len_scroll_bar_y + len_scroll_bar_height - len_scroll_box_height/2:
                         offset_y = mouse_y - len_scroll_box.y
                         len_scroll_box.y = mouse_y
 
                 if area_scroll_box_dragging:
-                    _, mouuse_y = event.pos
+                    _, mouse_y = event.pos
                     
                     if mouse_y >= area_scroll_bar_y - area_scroll_box_height/2 and mouse_y <= area_scroll_bar_y + area_scroll_bar_height - area_scroll_box_height/2:
                         offset_y = mouse_y - area_scroll_box.y
